@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="package.css">
+    <title>Document</title>
+</head>
+
+<body>
+     <!--==============Places===================-->
+     <section class="nav-bar">
+        <div class="logo">Travelocity</div>
+        <ul class="menu">
+            <li><a href="home.html">home</a></li>
+            <li><a href="#">tours</a></li>
+            <li><a href="package.html">package</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        </div>
+    </section>
+        <div class="places-text">
+            <small>OUR TOURS PACKAGES</small>
+            <h2>Favourite Places</h2>
+        </div>
+        <section class="places">
+        <div class="cards">
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="https://i.ibb.co/PQ3zHbp/384e10f39ebc6fab9b991467541ce8ed-dal-lake.jpg">
+                    </div>
+                </div>
+                <h2>The Kashmir Adventure</h2>
+                <p class="cost">17700/ Per Person</p>
+                    <div class="card-box">
+                        <p>🕓10D/11N</p>
+                        <p>Shreenagar,gulmarg etc..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="https://i.ibb.co/16gWxn0/images.jpg">
+                    </div>
+                </div>
+                <div class="text">
+                    
+                    <h2>Ready for Shimla</h2>
+                    <p class="cost">10000 / Per Person</p>
+                    <div class="card-box">
+                        <p>8D/8N</p>
+                        <p>Shimla,kulu,manali etc...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="https://i.ibb.co/hsbsbgP/download.jpg">
+                    </div>
+                </div>
+                <div class="text">
+                    
+                    <h2>Sikkim tour</h2>
+                    <p class="cost">7870 / Per Person</p>
+                    <div class="card-box">
+                        <p>6D/6N</p>
+                        <p>Juluk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="https://i.ibb.co/8YSnpmv/download-1.jpg">
+                    </div>
+                </div>
+                <div class="text">
+                    
+                    <h2>Rajasthan</h2>
+                    <p class="cost">8970 / Per Person</p>
+                    <div class="card-box">
+                        <p>6D/5N</p>
+                        <p>etc......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="https://i.ibb.co/pvjhHyq/download-2.jpg">
+                    </div>
+                </div>
+                <div class="text">
+                    
+                    <h2>Andaman</h2>
+                    <p class="cost">14770 / Per Person</p>
+                    <div class="card-box">
+                        <p>8D/8N</p>
+                        <p>......etc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="https://i.ibb.co/z64wRXk/download-3.jpg">
+                    </div>
+                </div>
+                <div class="text">
+                   
+                    <h2>Bhutan</h2>
+                    <p class="cost">11870 / Per Person</p>
+                    <div class="card-box">
+                        <p>🕓 7D/8N</p>
+                        <p>Thimpu,paro etc..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+@media (max-width:1100px) {
+    footer .content ,.middle box{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }

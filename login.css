@@ -1,0 +1,139 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url("sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/* Navigation Bar Styles */
+nav {
+  display: flex;
+  width: 100%;
+  background: #2f1d42;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li:hover {
+  border-radius: 5px;
+  background-color: gray;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #444;
+}
+
+/* Login and Signup Form Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-box, .signup-box {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: rgba(27, 27, 27, 0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+label {
+  color: #fff;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  max-width: 150px;
+  border-radius: 8px;
+  background-color: #cdd2cb;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(241, 81, 13);
+}
+
+/* Specific Button Styles */
+.login-btn {
+  background-color: #cdd2cb;
+}
+
+.login-btn:hover {
+  background-color: rgb(241, 81, 13);
+}
+
+.sign-up-btn {
+  background-color: #cdd2cb;
+}
+
+.sign-up-btn:hover {
+  background-color: rgb(241, 81, 13);
+}

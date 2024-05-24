@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - TRAVELOCITY</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Travelocity</div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="package.html">Package</a></li>
+        <li><a href="tour.html">Tours</a></li>
+        <li><a href="auth.html">Login/Register</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="auth-box">
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'login')">Login</button>
+            <button class="tab-link" onclick="openTab(event, 'register')">Register</button>
+        </div>
+
+        <div id="login" class="tab-content active">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <label for="login-username">Username:</label>
+                <input type="text" placeholder="Username or Email" id="login-username" name="username" required><br>
+                <label for="login-password">Password:</label>
+                <input type="password" placeholder="Password" id="login-password" name="password" required><br>
+                <button class="btn" type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="register" class="tab-content">
+            <h2>Register</h2>
+            <form action="register.php" method="POST">
+                <label for="register-username">Username:</label>
+                <input type="text" placeholder="Enter your Username" id="register-username" name="username" required><br>
+                <label for="register-email">Email:</label>
+                <input type="email" placeholder="Enter your Email Id" id="register-email" name="email" required><br>
+                <label for="register-password">Password:</label>
+                <input type="password" placeholder="Enter your Password" id="register-password" name="password" required><br>
+                <button class="btn" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab-link");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Default open the login tab
+document.getElementById("login").style.display = "block";
+</script>
+
+</body>
+</html>

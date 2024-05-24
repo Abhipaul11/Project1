@@ -1,0 +1,218 @@
+<?php
+session_start();
+
+// ... (rest of your code)
+
+$username = isset($_GET['username']) ? $_GET['username'] : '';
+
+$message = "Welcome back, " . $username . "!"; // Assuming login success
+?>
+
+<script>
+  if ("<?php echo isset($_SESSION['loggedin']); ?>" === "true") {
+    alert("<?php echo $message; ?>");
+    document.querySelector('body').insertAdjacentHTML('beforeend', '<div><i class="fas fa-user"></i> <?php echo $message; ?></div>');
+  } else {
+    // Redirect to login page if not logged in
+  }
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Travelocity</title>
+
+
+  <style>
+    .message {
+      display: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.2em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .message p {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <nav>
+    <div class="logo">Travelocity</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul class="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="package.html">Package</a></li>
+      <li><a href="tour.html">Tours</a></li>
+      <li><a href="auth.html">Login/Register</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div class="section_container" id="home">
+      <h1>Explore the world with Us and discover new things</h1>
+      <div class="header-form">
+        <form id="booking-form">
+          <div class="input-group">
+            <label for="destination">Enter your dream destination</label>
+            <input type="text" id="destination" placeholder="Which place" required>
+          </div>
+          <div class="input-group">
+            <label for="checkin">Arrival date</label>
+            <input type="date" id="checkin" required>
+          </div>
+          <div class="input-group">
+            <label for="checkout">Leaving date</label>
+            <input type="date" id="checkout" required>
+          </div>
+          <div class="input-group">
+            <label for="members">Members</label>
+            <input type="number" id="members" placeholder="How many members" required>
+          </div>
+          <button class="btn" type="submit">Confirm booking</button>
+        </form>
+        <div id="message" class="message">
+          <p>Congratulations! Your booking is confirmed.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="section-title">Our Services</h1>
+  <div class="photos">
+    <div class="photos-box">
+      <img src="https://i.ibb.co/KycQ1SP/hotel.jpg" alt="Hotel">
+    </div>
+    <div class="photos-box">
+      <img src="https://i.ibb.co/NSHDSSn/download.jpg" alt="Travel">
+    </div>
+    <div class="photos-box">
+      <img src="https://i.ibb.co/7ntbY6Y/foods.jpg" alt="Food">
+    </div>
+    <div class="photos-box">
+      <img src="https://i.ibb.co/5Yh2JSs/guide.jpg" alt="Guide">
+    </div>
+    <div class="photos-box">
+      <img src="https://i.ibb.co/b3bjFGM/download.jpg" alt="Travel">
+    </div>
+    <div class="photos-box">
+      <img src="https://i.ibb.co/wLgdgZT/sight.jpg" alt="Sightseeing">
+    </div>
+  </div>
+
+  <section id="poster">
+    <div class="box">
+      <div class="inclusion">
+        <h2>Inclusion</h2>
+        <ul>
+          <li>Best hotels</li>
+          <li>Transportation</li>
+          <li>Fooding</li>
+          <li>Travelling Guide service</li>
+          <li>Places to Visit</li>
+          <li>Accommodations</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box">
+      <div class="heading">
+        <p>It's time to</p>
+        <h2>Explore</h2>
+        <p>Your dream destinations</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="contact">
+        <ul>
+          <li>9732467080</li>
+          <li>travelocity2023@gmail.com</li>
+          <li>Packages</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-item">
+        <h2>Travelocity</h2>
+        <p>Here today, vacation tomorrow</p>
+        <div class="divider"></div>
+        <p>Copyright @Travelocity 2021-2023. All Rights Reserved</p>
+        <p>Follow us:</p>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-item">
+        <h3>Office Address</h3>
+        <p>SM/b-23A Salt Lake</p>
+        <p>Sector-1, Kolkata 700046</p>
+        <p>Ph: 9732467080</p>
+        <p>Email: travelocity2023@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Tours</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3>Additional Links</h3>
+        <ul>
+          <li><a href="about.html">Book Now</a></li>
+          <li><a href="contact.html">Join Our Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('booking-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting the traditional way
+      document.getElementById('message').style.display = 'block'; // Show the congratulation message
+    });
+  </script>
+</body>
+
+</html>

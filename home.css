@@ -1,0 +1,371 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url("images/unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #2f1d42;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li:hover {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+header {
+  background-image: url("images/compass.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.section_container {
+  padding: 3rem 1rem;
+}
+
+.section_container h1 {
+  margin-top: 40px;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-inline: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-form {
+  padding: 1.5rem;
+  border-radius: 40px;
+  background-color: rgba(74, 74, 74, 0.5);
+  margin: 0 5vw;
+}
+
+.header-form form {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: rgb(211, 232, 232);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.input-group input {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  max-width: 170px;
+}
+
+.color-alert {
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.header-form button {
+  background-color: rgb(255, 38, 0);
+}
+
+.header-form .btn {
+  font-size: 15px;
+  border: none;
+  color: #f1e6e6;
+  padding: 10px 10px;
+  transition: 0.5s ease-in-out;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.header-form .btn:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: rgb(199, 105, 88);
+  border-radius: 15px;
+}
+
+.photos {
+  display: flex;
+  background-color: #efefef;
+  padding: 20px;
+  margin: 6px 0;
+  overflow: auto;
+}
+
+.photos .photos-box {
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.photos .photos-box img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* Poster Section */
+#poster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#poster .box {
+  border: 2px solid white;
+  background-color: #f5f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 30px;
+  min-width: 280px;
+}
+
+#poster .box .inclusion h2,
+#poster .box .heading h2 {
+  margin-bottom: 8px;
+  text-align: center;
+  color: black;
+}
+
+#poster .box .inclusion li,
+#poster .box .heading p {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: rgb(83, 45, 83);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer .footer-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+}
+
+.footer .footer-item h2,
+.footer .footer-item h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer .footer-item p,
+.footer .footer-item ul {
+  color: white;
+}
+
+.footer .footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-item ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-item ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer-item ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .media-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer .media-icons a {
+  font-size: 28px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #222;
+  transition: all 0.3s ease;
+  height: 35px;
+  width: 35px;
+  color: #f1e6e6;
+}
+
+.footer .media-icons a:hover {
+  background-color: #444;
+}
+
+.divider {
+  height: 2px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #601919;
+    height: 100vh;
+    width: 70%;
+    text-align: center;
+    display: block;
+    transition: 0.3s ease;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  nav ul li a {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    left: 0;
+  }
+
+  input[type="checkbox"]:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  .footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-form {
+    margin: 0 3vw;
+  }
+
+  .header-form form {
+    flex-direction: column;
+  }
+
+  .input-group input {
+    max-width: 100%;
+  }
+
+  .photos .photos-box img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .section_container h1 {
+    font-size: 2.5rem;
+  }
+}
